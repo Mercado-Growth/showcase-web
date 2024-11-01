@@ -348,11 +348,17 @@ const setup_brevo_form = () => {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  let calendlyWidget = document.querySelector('#calendly-inline-widget');
+  let cycleText = document.querySelector('.mc-word');
   set_copyright()
-  setup_calendly_widget()
+  if (calendlyWidget){
+    setup_calendly_widget()
+  }
   setup_brevo_form()
 
-  setup_mc_cycles()
+  if (cycleText){
+    setup_mc_cycles()
+  }
   setup_mc_scroll_more_indicator()
 
   setup_mc_sidebar_toggles()
