@@ -248,6 +248,7 @@ input[type="hidden"], .mc-form-hidden {
 .mc-theme-1 {
   background: var(--mc-base-color-1);
   color: var(--mc-base-color-2);
+  border-color: var(--mc-base-color-2);
 
   .mc-pulse {
     animation: pulse-animation-theme-1 2s infinite;
@@ -261,6 +262,7 @@ input[type="hidden"], .mc-form-hidden {
 .mc-theme-2 {
   background: var(--white);
   color: var(--mc-base-color-1);
+  border-color: var(--mc-base-color-1);
 
   #mc-sidebar, #mc-sidebar-toggles {
     border-left: 1px solid rgba(0, 0, 0, 0.1);
@@ -1652,6 +1654,7 @@ input[type="hidden"], .mc-form-hidden {
       align-items: center;
       justify-content: center;
       aspect-ratio: 1.78;
+      max-height: 500px;
 
       #fareconnect-logo {
         max-width: 600px;

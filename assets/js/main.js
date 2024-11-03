@@ -170,6 +170,7 @@ const setup_mc_scroll_more_indicator = () => {
 
   const paths_to_show_on = [
     '/',
+    '/case-studies/elkislandretreat'
   ]
   console.log('paths_to_show_on', paths_to_show_on)
 
@@ -366,3 +367,7 @@ document.addEventListener('DOMContentLoaded', () => {
   observe_mc_sections()
   observe_calendly_messages()
 })
+
+if (window.location.pathname.endsWith('/') && window.location.pathname !== '/') {
+  window.history.replaceState({}, document.title, window.location.pathname.slice(0, -1) + window.location.search);
+}
