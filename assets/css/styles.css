@@ -1807,6 +1807,10 @@ input[type="hidden"], .mc-form-hidden {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     margin-top: 2rem;
+
+    iframe {
+      margin-top: 0;
+    }
   }
   iframe {
     height: 1170px !important;
