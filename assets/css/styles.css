@@ -257,6 +257,10 @@ input[type="hidden"], .mc-form-hidden {
   .mc-footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
+
+  hr {
+    border-color: #FFF;
+  }
 }
 
 .mc-theme-2 {
@@ -290,6 +294,10 @@ input[type="hidden"], .mc-form-hidden {
 
   .mc-footer {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  hr {
+    border-color: #000;
   }
 }
 
@@ -1801,6 +1809,13 @@ input[type="hidden"], .mc-form-hidden {
 
     iframe {
       margin-top: 0;
+      -ms-zoom: 0.75;
+      -moz-transform: scale(0.85);
+      -moz-transform-origin: 0 0;
+      -o-transform: scale(0.85);
+      -o-transform-origin: 0 0;
+      -webkit-transform: scale(0.85);
+      -webkit-transform-origin: 0 0;
     }
   }
 }
