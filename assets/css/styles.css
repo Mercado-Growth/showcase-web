@@ -1806,17 +1806,19 @@ input[type="hidden"], .mc-form-hidden {
   #calendly-inline-widget {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 4px;
-
-    iframe {
-      margin-top: 0;
-      -ms-zoom: 0.75;
-      -moz-transform: scale(0.85);
-      -moz-transform-origin: 0 0;
-      -o-transform: scale(0.85);
-      -o-transform-origin: 0 0;
-      -webkit-transform: scale(0.85);
-      -webkit-transform-origin: 0 0;
-    }
+    margin-top: 2rem;
+  }
+  iframe {
+    transform: scale(0.80);
+    transform-origin: 0 0;
+    -moz-transform: scale(0.80);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.80);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.80);
+    -webkit-transform-origin: 0 0;
+    width: 125%;
+    height: 1170px !important;
   }
 }
 
