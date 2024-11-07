@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
   load_template('components/masthead.html', 'masthead-template')
 }) */
 
+let _ = document.querySelector.bind(document)
+let __ = document.querySelectorAll.bind(document);
+
 const set_copyright = () => {
   const copyright_year_el = document.querySelector('#copyright-year')
   const current_year = new Date().getFullYear()
@@ -169,8 +172,7 @@ const setup_mc_scroll_more_indicator = () => {
   })
 
   const paths_to_show_on = [
-    '/',
-    '/case-studies/elkislandretreat'
+    '/'
   ]
   console.log('paths_to_show_on', paths_to_show_on)
 
@@ -348,6 +350,21 @@ const setup_brevo_form = () => {
   })
 }
 
+const setup_splide = () => {
+  if (_('[data-splide]') && window.Splide){
+    __('[data-section-type="splide"]').forEach(dom => {
+      try {
+        console.log('DOM FROM SPLIDE', dom)
+        let settings = JSON.parse(JSON.stringify(dom.dataset.splide))
+        console.log('DOM SPLIDE SETTINGS', settings)
+        new Splide(dom, settings).mount()
+      } catch (e) {
+        console.error('DOM SPLIDE ERROR', e)
+      }
+    })
+  }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   let calendlyWidget = document.querySelector('#calendly-inline-widget');
   let cycleText = document.querySelector('.mc-word');
@@ -366,6 +383,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   observe_mc_sections()
   observe_calendly_messages()
+  setup_splide()
 })
 
 if (window.location.pathname.endsWith('/') && window.location.pathname !== '/') {
