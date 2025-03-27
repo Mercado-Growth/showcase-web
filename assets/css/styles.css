@@ -1594,6 +1594,23 @@ input[type="hidden"], .mc-form-hidden {
   }
 }
 
+.mc-button-solid {
+  text-align: center;
+  line-height: 1.2;
+  display: inline-block;
+  border: 4px solid var(--mc-accent-color-1);
+  background: var(--mc-accent-color-1);
+  color: #FFF;
+  padding: 10px 30px;
+  border-radius: 40px;
+  /* margin-top: calc(var(--mc-base-margin-2) * 4); */
+  transition: background var(--mc-base-anim-speed-2), color var(--mc-base-anim-speed-2);
+
+  &:hover {
+    color: var(--mc-base-color-1);
+  }
+}
+
 .mc-statement {
   font-weight: 800;
   opacity: 1;
