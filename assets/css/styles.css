@@ -1834,6 +1834,15 @@ input[type="hidden"], .mc-form-hidden {
   }
 }
 
+.calendly-inline-widget-thank-you {
+  height: 1000px !important;
+  padding-bottom: 0 !important;
+  
+  iframe {
+    margin-top: -10px !important;
+  }
+}
+
 .calendly-spinner {
   display: none;
 }
