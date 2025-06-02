@@ -938,7 +938,7 @@ input[type="hidden"], .mc-form-hidden {
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
   transition: background-size 166ms, color 166ms;
-  color: inherit;
+  /* color: inherit; */
 
   &.active {
     background-size: 0 0.1em, 100% 0.1em;
