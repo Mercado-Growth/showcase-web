@@ -1857,7 +1857,7 @@ input[type="hidden"], .mc-form-hidden {
       margin-top: 0;
     }
   }
-  iframe {
+  #calendly-inline-widget iframe {
     height: 1170px !important;
   }
 }
